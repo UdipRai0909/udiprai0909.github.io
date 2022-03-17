@@ -22,7 +22,10 @@
    background: #293e6c;
   } */
   :root {
-   --background: linear-gradient(45deg, #02001F, #1F1B4E);
+   /* --background: linear-gradient(45deg, #02001F, #1F1B4E);
+    */
+   background: rgb(41, 62, 108);
+   background: linear-gradient(180deg, rgba(41, 62, 108, 1) 0%, rgba(41, 108, 107, 1) 0%, rgba(41, 45, 108, 1) 11%, rgba(0, 228, 255, 1) 52%, rgba(78, 41, 108, 1) 100%, rgba(41, 62, 108, 1) 100%);
    --text-color: #e92708e0;
   }
 
@@ -180,14 +183,14 @@
   ::selection {
    background: #000;
   }
- 
- .no-selection {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: -moz-none;
-  -o-user-select: none;
-  user-select: none;
- }
+
+  .no-selection {
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: -moz-none;
+   -o-user-select: none;
+   user-select: none;
+  }
 
   @keyframes animatedgradient {
    0% {
