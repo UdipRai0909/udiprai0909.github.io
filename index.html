@@ -1,77 +1,217 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
- <meta charset="utf-8">
+ <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <title>Portfolio &mdash; Udip Rai</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>Welcome, NPC Character.</title>
+ <style>
+  /* * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  } */
 
- <!-- Facebook and Twitter integration -->
- <meta property="og:title" content="" />
- <meta property="og:image" content="" />
- <meta property="og:url" content="" />
- <meta property="og:site_name" content="" />
- <meta property="og:description" content="" />
- <meta name="twitter:title" content="" />
- <meta name="twitter:image" content="" />
- <meta name="twitter:url" content="" />
- <meta name="twitter:card" content="" />
+  /* body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #293e6c;
+  } */
+  :root {
+   --background: linear-gradient(45deg, #02001F, #1F1B4E);
+   --text-color: #e92708e0;
+  }
 
- <!-- CSS -->
- <link rel="favicon icon" href="assets/images/udiprai_favicon.png" type="image">
- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
- <link rel="stylesheet" href="assets/css/animate.css">
- <link rel="stylesheet" href="assets/css/icomoon.css">
- <link rel="stylesheet" href="assets/css/bootstrap.css">
- <link rel="stylesheet" href="assets/css/style.css">
- <link
-  href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Permanent+Marker&display=swap"
-  rel="stylesheet">
- <link rel="stylesheet" href="assets/css/_media_queries.css">
- <link rel="stylesheet" href="assets/css/_special.css">
- <link rel="stylesheet" href="assets/css/_style.css">
- <link rel="stylesheet" href="assets/css/_udiprai.css">
+  body {
+   margin: 0;
+   background: var(--background);
+   color: var(--text-color);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
 
- <!-- JS -->
- <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  .list {
+   margin: 0;
+   padding: 0;
+   padding-top: 25px;
+   list-style: none;
+  }
 
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  .list-item {
+   position: relative;
+   font-weight: bold;
+   font-size: 7.5rem;
+   margin: 0 auto;
+   width: max-content;
+  }
 
- <script>
-  $(function () {
-   $("#includeHeader").load("assets/html/level0/_header.html");
-   $("#includeFooter").load("assets/html/level0/_footer.html");
-   $("#includeAbout").load("assets/html/level0/1_about.html");
-   $("#includeResume").load("assets/html/level0/2_resume.html");
-   $("#includeSkills").load("assets/html/level0/3_skills.html");
-   $("#includeTips").load("assets/html/level0/4_tips.html");
-   $("#includeIssues").load("assets/html/level0/5_issues.html");
-   $("#includeWorks").load("assets/html/level0/6_works.html");
-   $("#includeNotes").load("assets/html/level0/7_notes.html");
-   $("#includeContact").load("assets/html/level0/8_contact.html");
-   $("#includeMtv").load("assets/html/level0/9_motivation.html");
-  });
- </script>
+  .list-item>.split-text {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   line-height: 1;
+   transition: color 0ms 200ms;
+  }
+
+  .list-item:hover>.split-text {
+   color: transparent;
+   user-select: none;
+   transition-delay: 0ms;
+  }
+
+  .list-item>.split-text::before,
+  .list-item>.split-text::after {
+   position: absolute;
+   content: attr(data-text);
+   height: calc(.5em);
+   overflow: hidden;
+   left: 0;
+   right: 0;
+   color: var(--text-color);
+   transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+   user-select: none;
+  }
+
+  .list-item:hover>.split-text::before,
+  .list-item:hover>.split-text::after {
+   color: white;
+   transform: skewX(15deg);
+  }
+
+  .list-item>.split-text::after {
+   bottom: 0;
+   display: flex;
+   align-items: flex-end;
+  }
+
+  .list-item::before {
+   content: "";
+   position: absolute;
+   width: 110%;
+   left: -5%;
+   top: calc(50% - 1px);
+   height: 2px;
+   transform: scale(0);
+   background-color: var(--text-color);
+   border-radius: 20px;
+   z-index: 1;
+   transition: transform 200ms ease-in-out;
+  }
+
+  .list-item:hover::before {
+   transform: scale(1);
+  }
+
+  div.another-level {
+   display: flex;
+   flex-direction: column;
+   height: 20vh;
+   justify-content: space-evenly;
+   align-items: center;
+  }
+
+  .inner-div {
+   background: #000;
+   padding: 1rem 2rem;
+   font-size: 2rem;
+  }
+
+  .gradient-border {
+   --borderWidth: 4px;
+   margin-top: 3rem;
+   position: relative;
+   border-radius: var(--borderWidth);
+   color: #fff;
+   padding: 1rem 2rem;
+   text-decoration: none;
+  }
+
+  .gradient-border:after {
+   content: "";
+   position: absolute;
+   top: calc(-1 * var(--borderWidth));
+   left: calc(-1 * var(--borderWidth));
+   height: calc(100% + var(--borderWidth) * 2);
+   width: calc(100% + var(--borderWidth) * 2);
+   background: linear-gradient(60deg,
+     #f79533,
+     #f37055,
+     #ef4e7b,
+     #a166ab,
+     #5073b8,
+     #1098ad,
+     #07b39b,
+     #6fba82);
+   /* border-radius: calc(2 * var(--borderWidth)); */
+   border-radius: 1.6rem;
+   z-index: -1;
+   animation: animatedgradient 3s ease alternate infinite;
+   background-size: 300% 300%;
+  }
+
+  .gradient-logo {
+   background-image: linear-gradient(to left,
+     violet,
+     white,
+     cyan,
+     orange,
+     yellow,
+     orange,
+     red);
+   animation: animatedgradient 3s ease alternate infinite;
+   background-size: 300% 300%;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+
+  .title-font {
+   font-family: monospace;
+   font-size: 3rem;
+   text-align-last: center;
+  }
+
+  ::selection {
+   background: green;
+  }
+
+  @keyframes animatedgradient {
+   0% {
+    background-position: 0% 50%;
+   }
+
+   50% {
+    background-position: 100% 50%;
+   }
+
+   100% {
+    background-position: 0% 50%;
+   }
+  }
+ </style>
 </head>
 
 <body>
-
- <div id="page">
-  <div class="udip-loader"></div>
-  <div id="includeHeader"></div>
-  <div id="includeAbout"></div>
-  <div id="includeResume"></div>
-  <div id="includeSkills"></div>
-  <div id="includeTips"></div>
-  <div id="includeIssues"></div>
-  <div id="includeWorks"></div>
-  <div id="includeNotes"></div>
-  <div id="includeContact"></div>
-  <div id="includeMtv"></div>
-  <div id="includeFooter"></div>
+ <div class="another-level">
+  <div class="inner-div">
+   <span class="gradient-logo title-font">View my portfolio!</span>
+  </div>
+  <ul class="list">
+   <li class="list-item">
+    <span class="split-text" data-text="UDIP">UDIP</span>
+   </li>
+   <li class="list-item">
+    <span class="split-text" data-text="RAI">RAI</span>
+   </li>
+  </ul>
+  <a class="gradient-border title-font" data-text="Click Me :)"
+   href="https://portfolio-projects-01.herokuapp.com/">Click Me
+   :)</a>
  </div>
 </body>
 
