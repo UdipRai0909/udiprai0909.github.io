@@ -1,0 +1,215 @@
+<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website       : 	http://127.0.0.1:5500/index.html
+	Email         : 	udiprai28@gmail.com
+	Instagram     :  https://www.instagram.com/udiprai28/
+	Youtube       : 	https://www.youtube.com/c/xzerocounterx583
+
+	//////////////////////////////////////////////////////
+  -->
+
+
+
+What does # in html do? How does it work?
+
+
+
+Fundamentals
+1. Running JavaScript.html
+2. Variables.html
+3. Data Types and Data Structures.html
+4. Type Conversion.html
+5. Equality.html
+6. Loops.html
+7. Control Flow.html
+8. Expressions & Operators.html
+9. Functions.html
+
+
+Advanced
+10. Advanced Scope.html
+11. Closure.html
+12. Currying.html
+13. this.html
+14. Prototype.html
+15. Prototypal Inheritance.html
+16. Class.html
+17. Iterators.html
+18. Generators.html
+19. Event Loop.html
+20. Asynchronous JavaScript.html
+21. Module System.html
+
+
+Web APIs
+22. DOM.html
+23. XHR & Fetch.html
+24. Storage.html
+25. Video and Audio.html
+26. Drawing Graphics.html
+
+
+Tooling & Miscellnaeous
+27. Linters.html
+28. Code Formatters.html
+29. Bundlers.html
+30. TypeScript.html
+31. Next Steps.html
+
+
+# Fundamentals
+
+1. Running JavaScript
+script
+browser console
+link external file 
+
+2. Variables
+Declarations
+var
+let
+const
+
+Scope
+global
+function
+block
+
+Hoisting
+
+3. Data Types and Data Structures
+Primitive Types
+undefined
+boolean
+number
+bigInt
+string
+symbol
+
+null
+Object
+Function
+
+Data Structures
+Array
+Map/Weak Map
+Set/Weak Set
+Date
+
+4. Type Conversion
+Explicit Conversion
+Implicit Conversion
+
+5. Equality
+== vs ===
+
+6. Loops
+while
+do .. while
+for
+break/continue
+for .. in
+for .. of
+
+7. Control Flow
+if .. else
+switch
+try/catch/throw
+
+8. Expression & Operators
+Assignment Operators
+Arithmetic Operators
+Logical Operators
+Conditional Operator
+Comparision Operator
+Relational Operators
+Bitwise Operators
+String Operators
+Comma Operator
+Unary Operator
+
+9. Functions
+Function Declarations
+Function Expressions
+Calling Functions
+Parameters & Arguments
+Scope
+Arrow Functions
+
+
+# Advanced
+
+1. Advanced Scope
+
+2. Closure
+
+3. Currying
+
+4. this
+Implicit Binding
+Explicit Binding
+new Binding
+Lexical Binding
+Default Binding
+
+5. Prototype
+
+6. Prototype Inheritance
+
+7. Class
+
+8. Iterators
+
+9. Generators
+
+10. Event Loop
+
+11. Asynchronous JavaScript
+setTimeout
+setInterval
+callBacks
+Promises
+async await
+
+12. Module System
+CJS
+ESM
+Import/Export
+Default and Named Exports
+
+
+# Web APIs
+
+1. DOM
+
+2. XHR & Fetch
+
+3. Storage
+
+4. Video and Audio
+
+5. Drawing Graphics
+
+
+# Tooling & Misc
+
+1. Linters
+eslint
+
+2. Code Formatters
+prettier
+
+3. Bundlers
+webpack
+rollup
+parcel
+
+4. TypeScript
+
+5. Next Steps
+
+

@@ -1,0 +1,22 @@
+What is a CSS source map?
+Image result for how do you create a source map for css
+A “source map” is a special file that connects a minified/uglified version of an asset (CSS or JavaScript) to the original authored version. Say you've got a file called _header. scss that gets imported into global.Mar 1, 2019
+
+
+
+https://marketplace.visualstudio.com/items?itemName=maptz.regionfolder
+
+The precise format of the comment depends on the language. For instance, for C-Style languages, regions are of the form:
+
+/* #region Main */
+public static void Main(string args[])
+{
+   //Your code goes here
+}
+/* #endregion */
+For HTML style languages, you could define a foldable region with the following tags:
+
+<!-- #region Body -->
+<body>
+</body>
+<!-- #endregion -->

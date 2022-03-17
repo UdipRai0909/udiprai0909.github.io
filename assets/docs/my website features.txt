@@ -1,0 +1,12 @@
+Features already added:
+1. Responsive Webpage
+
+
+
+Features to add in the future:
+1. Dark Mode/Light Mode
+
+
+
+
+
