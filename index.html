@@ -178,8 +178,16 @@
   }
 
   ::selection {
-   background: green;
+   background: #000;
   }
+ 
+ .no-selection {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+ }
 
   @keyframes animatedgradient {
    0% {
@@ -199,7 +207,7 @@
 
 <body>
  <div class="another-level">
-  <div class="inner-div">
+  <div class="inner-div no-selection">
    <span class="gradient-logo title-font">View my portfolio!</span>
   </div>
   <ul class="list">
