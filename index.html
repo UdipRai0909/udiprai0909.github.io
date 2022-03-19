@@ -5,218 +5,35 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="styles.css">
- <title>Welcome, NPC Character.</title>
- <style>
-  * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-  }
 
+ <!-- FONTS -->
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 
-  :root {
-   background: rgb(41, 62, 108);
-   background: linear-gradient(180deg, rgba(41, 62, 108, 1) 0%, rgba(41, 108, 107, 1) 0%, rgba(41, 45, 108, 1) 11%, rgba(0, 228, 255, 1) 52%, rgba(78, 41, 108, 1) 100%, rgba(41, 62, 108, 1) 100%);
-   --text-color: #e92708e0;
-  }
-
-  body {
-   margin: 0;
-   background: var(--background);
-   color: var(--text-color);
-   min-height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  }
-
-  .list {
-   margin: 0;
-   padding: 0;
-   padding-top: 25px;
-   list-style: none;
-  }
-
-  .list-item {
-   position: relative;
-   font-weight: bold;
-   font-size: 7.5rem;
-   margin: 0 auto;
-   width: max-content;
-  }
-
-  .list-item>.split-text {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   line-height: 1;
-   transition: color 0ms 200ms;
-  }
-
-  .list-item:hover>.split-text {
-   color: transparent;
-   user-select: none;
-   transition-delay: 0ms;
-  }
-
-  .list-item>.split-text::before,
-  .list-item>.split-text::after {
-   position: absolute;
-   content: attr(data-text);
-   height: calc(.5em);
-   overflow: hidden;
-   left: 0;
-   right: 0;
-   color: var(--text-color);
-   transition: color 200ms ease-in-out, transform 200ms ease-in-out;
-   user-select: none;
-  }
-
-  .list-item:hover>.split-text::before,
-  .list-item:hover>.split-text::after {
-   color: white;
-   transform: skewX(15deg);
-  }
-
-  .list-item>.split-text::after {
-   bottom: 0;
-   display: flex;
-   align-items: flex-end;
-  }
-
-  .list-item::before {
-   content: "";
-   position: absolute;
-   width: 110%;
-   left: -5%;
-   top: calc(50% - 1px);
-   height: 2px;
-   transform: scale(0);
-   background-color: var(--text-color);
-   border-radius: 20px;
-   z-index: 1;
-   transition: transform 200ms ease-in-out;
-  }
-
-  .list-item:hover::before {
-   transform: scale(1);
-  }
-
-  div.another-level {
-   display: flex;
-   flex-direction: column;
-   height: 20vh;
-   justify-content: space-evenly;
-   align-items: center;
-  }
-
-  .inner-div {
-   background: #000;
-   padding: 1rem 2rem;
-   font-size: 2rem;
-   text-align: center;
-  }
-
-  .gradient-border {
-   --borderWidth: 4px;
-   margin-top: 3rem;
-   position: relative;
-   border-radius: var(--borderWidth);
-   color: #fff;
-   padding: 1rem 2rem;
-   text-decoration: none;
-  }
-
-  .gradient-border:after {
-   content: "";
-   position: absolute;
-   top: calc(-1 * var(--borderWidth));
-   left: calc(-1 * var(--borderWidth));
-   height: calc(100% + var(--borderWidth) * 2);
-   width: calc(100% + var(--borderWidth) * 2);
-   background: linear-gradient(60deg,
-     #f79533,
-     #f37055,
-     #ef4e7b,
-     #a166ab,
-     #5073b8,
-     #1098ad,
-     #07b39b,
-     #6fba82);
-   /* border-radius: calc(2 * var(--borderWidth)); */
-   border-radius: 1.6rem;
-   z-index: -1;
-   animation: animatedgradient 3s ease alternate infinite;
-   background-size: 300% 300%;
-  }
-
-  .gradient-logo {
-   background-image: linear-gradient(to left,
-     violet,
-     white,
-     cyan,
-     orange,
-     yellow,
-     orange,
-     red);
-   animation: animatedgradient 3s ease alternate infinite;
-   background-size: 300% 300%;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-  }
-
-  .title-font {
-   font-family: monospace;
-   font-size: 3rem;
-   text-align-last: center;
-  }
-
-  ::selection {
-   background: #000;
-  }
-
-  .no-selection {
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: -moz-none;
-   -o-user-select: none;
-   user-select: none;
-  }
-
-  @keyframes animatedgradient {
-   0% {
-    background-position: 0% 50%;
-   }
-
-   50% {
-    background-position: 100% 50%;
-   }
-
-   100% {
-    background-position: 0% 50%;
-   }
-  }
- </style>
+ <!-- CSS -->
+ <link rel="stylesheet" href="./css/border-effect.css">
+ <link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body>
- <div class="another-level">
-  <div class="inner-div no-selection">
-   <span class="gradient-logo title-font">View my portfolio!</span>
+
+ <!--Hero_Section-->
+ <h1>My <span class="type-animation animating">Portfolio</span>Website</h1>
+
+ <div class="starting-div">
+  <div class="borderBtn">
+   <button class="type-btn">
+    <span class="noselect">Type again</span>
+   </button>
   </div>
-  <ul class="list">
-   <li class="list-item">
-    <span class="split-text" data-text="UDIP">UDIP</span>
-   </li>
-   <li class="list-item">
-    <span class="split-text" data-text="RAI">RAI</span>
-   </li>
-  </ul>
-  <a class="gradient-border title-font" data-text="Click Me :)"
-   href="https://portfolio-projects-01.herokuapp.com/">Click Me
-   :)</a>
+
+  <div class="borderBtn">
+   <button class="portfolio-btn">
+    <span class="noselect">Portfolio</span>
+   </button>
+  </div>
  </div>
+
+ <script src="./js/custom.js"></script>
 </body>
 
 </html>
