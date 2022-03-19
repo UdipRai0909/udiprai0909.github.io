@@ -1,0 +1,10 @@
+@media screen and (max-width: 712px) {
+  button {
+    font-size: 17px;
+  }
+
+  button:hover,
+  button:focus {
+    font-size: 18px;
+  }
+}
