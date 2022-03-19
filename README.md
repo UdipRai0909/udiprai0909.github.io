@@ -15,3 +15,4 @@
 - 010 - Changes in mediaqueries.css
 - 011 - Changes in mediaqueries.css
 - 012 - Changes in mediaqueries.css
+- 012 - Overall initial changes done
