@@ -23,17 +23,15 @@
     font-size: 16px;
   }
 
-  @media screen and (max-width: 437px) {
-    h1 {
-      font-size: 3rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 
-    .section2 {
-      flex-direction: column;
-    }
+  .section2 {
+    flex-direction: column;
+  }
 
-    .border-btn:first-child {
-      margin-bottom: 1rem;
-    }
+  .borderBtn:first-child {
+    margin-bottom: 1rem;
   }
 }
