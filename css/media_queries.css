@@ -12,3 +12,28 @@
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 437px) {
+  button {
+    font-size: 15px;
+  }
+
+  button:hover,
+  button:focus {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 437px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .section2 {
+      flex-direction: column;
+    }
+
+    .border-btn:first-child {
+      margin-bottom: 1rem;
+    }
+  }
+}

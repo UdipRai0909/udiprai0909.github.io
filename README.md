@@ -11,3 +11,4 @@
 - Initial Changes in design 6
 - Initial Changes in design 7
 - Initial Changes in design 8
+- 009 - Changes in mediaqueries.css
