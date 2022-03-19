@@ -19,9 +19,8 @@ h1 {
 }
 
 .starting-div {
-  width: 40%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .type-animation {
