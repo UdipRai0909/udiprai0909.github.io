@@ -5,9 +5,12 @@
 }
 
 body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-color: #f7f3ff;
   color: slateblue;
   font-family: Rosario, sans-serif;
@@ -18,9 +21,13 @@ h1 {
   text-align: center;
 }
 
-.starting-div {
+.section1 {
   display: flex;
-  justify-content: center;
+  height: 7rem;
+}
+
+.section2 {
+  display: flex;
 }
 
 .type-animation {

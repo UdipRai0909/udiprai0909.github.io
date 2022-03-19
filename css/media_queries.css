@@ -1,4 +1,8 @@
 @media screen and (max-width: 712px) {
+  .section1 {
+    height: 12rem;
+  }
+
   button {
     font-size: 17px;
   }
