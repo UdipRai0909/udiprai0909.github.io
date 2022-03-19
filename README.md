@@ -5,3 +5,5 @@
 - Added some font families
 - Initial Changes in design 1
 - Initial Changes in design 2
+- Initial Changes in design 3
+- Initial Changes in design 4

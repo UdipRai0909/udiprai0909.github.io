@@ -157,7 +157,7 @@ button {
 }
 button:hover,
 button:focus {
-  font-size: 19px;
+  font-size: 19px !important;
   transition: border-color 0s, 0.3s ease-out;
   background-color: #e6daff;
 }

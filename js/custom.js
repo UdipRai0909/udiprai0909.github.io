@@ -1,8 +1,3 @@
-// Not required for animation, just provides "Retype" button functionality
-
-// Animation restart method from CSS-Tricks:
-// @link https://css-tricks.com/restart-css-animation/
-
 const typeBtn = document.querySelector(".type-btn");
 const portfolioBtn = document.querySelector(".portfolio-btn");
 const word = document.querySelector("h1 span");
