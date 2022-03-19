@@ -1,3 +1,4 @@
+/* Laptops / Desktops */
 @media screen and (max-width: 712px) {
   .section1 {
     height: 12rem;
@@ -13,7 +14,20 @@
   }
 }
 
+/* Tablets / Smartphones */
 @media screen and (max-width: 437px) {
+  .section1 {
+    height: 10rem;
+  }
+
+  .section2 {
+    flex-direction: column;
+  }
+
+  .borderBtn:first-child {
+    margin-bottom: 1rem;
+  }
+
   button {
     font-size: 15px;
   }
@@ -26,12 +40,11 @@
   h1 {
     font-size: 3rem;
   }
+}
 
-  .section2 {
-    flex-direction: column;
-  }
-
-  .borderBtn:first-child {
-    margin-bottom: 1rem;
+/* Small phones */
+@media screen and (max-width: 291px) {
+  .section1 {
+    height: 12rem;
   }
 }
