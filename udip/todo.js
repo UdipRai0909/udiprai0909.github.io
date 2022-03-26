@@ -13,7 +13,7 @@ let defaultPH = "Add Todo";
 let newPH = "Edit Todo";
 var alertOnce = localStorage.getItem("browser_alert_once") || "";
 var readme = `
-* To-Do List (JS App)
+* To-Do List (JS App By UDIP)
 
 # Features:
 1. CRUD Functionality
