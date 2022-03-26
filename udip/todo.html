@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>To-do List</title>
+</head>
+
+<body>
+
+ <!-- take input -->
+ <div>
+  <h1>To-Do List (JS App By UDIP)</h1>
+  <p>What do you want to do?</p>
+  <input name="text" id="input1" placeholder="Add Todo" />
+  <input type="hidden" id="saveId" />
+  <button id="addTodo">Add</button>
+  <button id="saveTodo" style="display:none;">Update</button>
+  <button onclick="resetTodo()">Reset</button>
+ </div>
+
+ <!-- display output -->
+ <ol id="output1"></ol>
+
+ <script src="todo.js"></script>
+</body>
+
+</html>
